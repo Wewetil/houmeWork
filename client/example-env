@@ -1,0 +1,4 @@
+HOST=0.0.0.0
+PORT=5080
+#SERVICE_URL=http://localhost:8080/tasks
+SERVICE_URL=http://server:8080/tasks

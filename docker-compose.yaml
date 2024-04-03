@@ -1,0 +1,21 @@
+version: '3.3'
+services:
+  server:
+    container_name: "server"
+    build:
+      dockerfile: ./service/Dockerfile
+      context: .
+    ports:
+       - "8080:8080"
+    volumes:
+      - ./service:/app
+
+  client:
+    container_name: "client"
+    build:
+      dockerfile: ./client/Dockerfile
+      context: .
+    ports:
+        - "5080:5080"
+    volumes:
+      - ./client:/app   
